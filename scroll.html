@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      /* Custom CSS for styling */
+      .center-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Makes sure the container takes at least the full viewport height */
+      }
+
+      /* Style loading indicator */
+      #loading {
+        display: none; /* Hide it initially */
+        font-size: 18px;
+        color: #007bff; /* Bootstrap primary color */
+      }
+
+      /* Style repositories */
+      .repo {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+      }
+    </style>
+    <title>Pricing Page</title>
+  </head>
+  <body>
+    <!-- Centered Container -->
+    <div class="center-container">
+      <div id="repositories"></div>
+      <div id="loading" class="text-center mt-3">
+        <p>Loading...</p>
+      </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
